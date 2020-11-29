@@ -1,0 +1,13 @@
+<h3  
+[ngStyle]="{backgroundColor: getColor()}"
+[ngClass]="{highlight: serverStatus==='online' }"
+>The server Component</h3>
+
+<input type="text" [(ngModel)]="serverId">
+<p *ngIf="serverId; else noServer" >The server was created, id = {{serverId}} </p>
+<ng-template #noServer>
+    <p>
+      No Server created!  
+    </p>
+</ng-template>
+<button class="btn btn-warning" (click)="serverStatus= 'online'">Online</button>

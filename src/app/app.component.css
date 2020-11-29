@@ -1,0 +1,14 @@
+h3 {
+    color: darkblue;
+}
+input{
+    margin-right: 5;
+    
+}
+button.btn{
+    padding: 5px 10px;
+}
+
+.white_color{
+    color: white;
+}
